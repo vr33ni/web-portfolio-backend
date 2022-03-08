@@ -44,6 +44,9 @@ const programmingCollection = 'programming';
 
 const db = firebase.firestore();
 
+router.get('/prof', async (req, res) => {
+    res.status(200).json({"test": "successful"})
+});
 
 router.get('/prof', async (req, res) => {
     (async () => {

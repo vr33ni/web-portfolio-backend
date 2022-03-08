@@ -12,7 +12,6 @@ const config=require('./config.js')
 //     databaseURL: `${config.DB_URL}`,
 //   };
 
-console.log("svc acc", `${config.DB_URL}`, `${config.FB_SVC_ACC_TYPE}`);
 
   var serviceAccount = {
     "type": `${config.FB_SVC_ACC_TYPE}`,
@@ -37,5 +36,7 @@ try {
   //TODO: ignoring until firebase-functions fix released
   console.log(error)
 }
+
+console.log("firebase loaded", admin);
 
 module.exports=admin
