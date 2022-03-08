@@ -16,7 +16,7 @@ module.exports = {
   FB_SVC_ACC_TYPE: process.env.FB_SVC_ACC_TYPE,
   FB_SVC_ACC_PROJECT_ID: process.env.FB_SVC_ACC_PROJECT_ID,
   FB_SVC_ACC_PRIVATE_KEY_ID: process.env.FB_SVC_ACC_PRIVATE_KEY_ID,
-  FB_SVC_ACC_PRIVATE_KEY: process.env.FB_SVC_ACC_PRIVATE_KEY.replace(/\n/gm, '\n'),
+  FB_SVC_ACC_PRIVATE_KEY: process.env.FB_SVC_ACC_PRIVATE_KEY.replace(/\\n/g, '\n'),
   FB_SVC_ACC_CLIENT_EMAIL: process.env.FB_SVC_ACC_CLIENT_EMAIL,
   FB_SVC_ACC_CLIENT_ID: process.env.FB_SVC_ACC_CLIENT_ID,
   FB_SVC_ACC_AUTH_URI: process.env.FB_SVC_ACC_AUTH_URI,
