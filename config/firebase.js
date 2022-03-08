@@ -15,16 +15,16 @@ const config=require('./config.js')
 console.log("svc acc", `${config.DB_URL}`, `${config.TYPE}`);
 
   var serviceAccount = {
-    "type": `${config.TYPE}`,
-    "project_id": `${config.FB_PROJECT_ID}`,
-    "private_key_id": `${config.PRIV_KEY_ID}`,
-    "private_key": `${config.PRIV_KEY}`,
-    "client_email": `${config.CLIENT_EMAIL}`,
-    "client_id": `${config.CLIENT_ID}`,
-    "auth_uri": `${config.AUTH_URI}`,
-    "token_uri": `${config.TOKEN_URI}`,
-    "auth_provider_x509_cert_url": `${config.AUTH_PROVIDER_X509_CERT_URL}`,
-    "client_x509_cert_url": `${config.CLIENT_X509_CERT_URL}`,
+    "type": `${config.FB_SVC_ACC_TYPE}`,
+    "project_id": `${config.FB_SVC_ACC_PROJECT_ID}`,
+    "private_key_id": `${config.FB_SVC_ACC_PRIVATE_KEY_ID}`,
+    "private_key": `${config.FB_SVC_ACC_PRIVATE_KEY}`,
+    "client_email": `${config.FB_SVC_ACC_CLIENT_EMAIL}`,
+    "client_id": `${config.FB_SVC_ACC_CLIENT_ID}`,
+    "auth_uri": `${config.FB_SVC_ACC_AUTH_URI}`,
+    "token_uri": `${config.FB_SVC_ACC_TOKEN_URI}`,
+    "auth_provider_x509_cert_url": `${config.FB_SVC_ACC_AUTH_PROVIDER_X509_CERT_URL}`,
+    "client_x509_cert_url": `${config.FB_SVC_ACC_CLIENT_X509_CERT_URL}`,
 }
 
 
