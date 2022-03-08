@@ -5,7 +5,6 @@ const cors = require('cors');
 const firebase = require("./config/firebase.js")
 const routes = require('./routes')
 const app = express()
-let mode=''
 
 
 const corsOptions = {
