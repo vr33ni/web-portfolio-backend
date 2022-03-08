@@ -1,17 +1,26 @@
-require('dotenv-flow').config({ default_node_env: 'development' });
-
+require("dotenv-flow").config({ default_node_env: "development" });
 
 module.exports = {
-    NODE_ENV: process.env.NODE_ENV || 'development',
-    HOST: process.env.HOST || 'localhost',
-    PORT: process.env.PORT || 8080,
-    CORS_ORIGIN: process.env.CORS_ORIGIN || 'http://localhost:5002',
-    API_KEY: process.env.API_KEY,
-    AUTH_DOMAIN: process.env.AUTH_DOMAIN,
-    PROJECT_ID: process.env.PROJECT_ID,
-    STORAGE_BUCKET: process.env.STORAGE_BUCKET,
-    MESSAGING_SENDER_ID: process.env.MESSAGING_SENDER_ID,
-    APP_ID: process.env.APP_ID,
-    MEASUREMENT_ID: process.env.MEASUREMENT_ID,
-    DB_URL: process.env.DB_URL,
-}
+  NODE_ENV: process.env.NODE_ENV || "development",
+  HOST: process.env.HOST || "localhost",
+  PORT: process.env.PORT || 8080,
+  CORS_ORIGIN: process.env.CORS_ORIGIN || "http://localhost:5002",
+  API_KEY: process.env.API_KEY,
+  AUTH_DOMAIN: process.env.AUTH_DOMAIN,
+  PROJECT_ID: process.env.PROJECT_ID,
+  STORAGE_BUCKET: process.env.STORAGE_BUCKET,
+  MESSAGING_SENDER_ID: process.env.MESSAGING_SENDER_ID,
+  APP_ID: process.env.APP_ID,
+  MEASUREMENT_ID: process.env.MEASUREMENT_ID,
+  DB_URL: process.env.DB_URL,
+  TYPE: process.env.TYPE,
+  FB_PROJECT_ID: process.env.FB_PROJECT_ID,
+  PRIV_KEY_ID: process.env.PRIV_KEY_ID,
+  PRIV_KEY: process.env.PRIV_KEY.replace(/\n/gm, '\n'),
+  CLIENT_EMAIL: process.env.CLIENT_EMAIL,
+  CLIENT_ID: process.env.CLIENT_ID,
+  AUTH_URI: process.env.AUTH_URI,
+  TOKEN_URI: process.env.TOKEN_URI,
+  AUTH_PROVIDER_X509_CERT_URL: process.env.AUTH_PROVIDER_X509_CERT_URL,
+  CLIENT_X509_CERT_URL: process.env.CLIENT_X509_CERT_URL,
+};
